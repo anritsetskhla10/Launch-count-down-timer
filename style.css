@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+*{
+    font-family: "Red Hat Text", sans-serif;
+}
+
+
+body{
+    min-width: 375px;
+    min-height: 100vh;
+    background:  url(./images/bg-stars-mobile.png) top center /375px ,
+    linear-gradient(to bottom, #1d1e28 0%, #261c2d 95%, #261a2d 100%);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 327px;
+    margin: 142px 0 54px;
+    padding: 0 24px;
+    display: block;
+    align-items: center;
+}
+h1{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 6.14px;
+    text-align: center;
+    color: #fff;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 163px;
+}
+
+.date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:9px;
+}
+
+.box{
+    width: 70px;
+    height: 71px;
+    margin: 0 0 9px;
+    padding: 0 0 4.7px;
+    border-radius: 8px;
+    background-color: #191a23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.97;
+    letter-spacing: -1.08px;
+    text-align: center;
+    color: #fb5e84;
+    position: absolute;
+    z-index: 4;
+}
+
+.box-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 66.3px;
+    background-color: #343650;
+    border-radius: 4px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.center-separator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+hr{
+    width: 64px;
+    height: 0.5px;
+    opacity: 0.25;
+    background-color: #000;
+    z-index: 5;
+}
+
+.oval-left{
+    width: 3px;
+    height: 6px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius:50% ;
+    transform: rotate(-180deg);
+    background-color: #191a23;
+}
+
+.oval-right{
+    width: 3px;
+    height: 6px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius:50% ;
+    transform: rotate(-180deg);
+    background-color: #191a23;
+}
+
+.rectangle{
+    width: 70px;
+    height: 33px;
+
+}
+
+h3{
+    font-size: 7px;
+    font-weight: bold;
+    letter-spacing: 2.96px;
+    text-align: center;
+    color: #8385a9;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 375px;
+    background: url(./images/pattern-hills-mobile.svg) center bottom ;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+
+.media{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    margin: 96px 0 48px;
+}
+
+/*    ---------------------------------------for desktop---------------------------------------- */
+
+@media screen and (min-width:1440px) {
+    
+    body{
+        background:  url(./images/bg-stars.svg),
+        linear-gradient(to bottom, #1d1e28 0%, #261c2d 95%, #261a2d 100%);
+        background-repeat: no-repeat;
+    }
+    
+    header{
+        width: 431px;
+        margin: 132px 0 104px;
+        padding: 0;
+    }
+
+    h1{
+        font-size: 22px;
+        letter-spacing: 7.5px;
+    }
+    
+    main{
+        gap: 32px;
+        margin-bottom: 152px;
+    }
+    
+    .date{
+        gap:16px;
+    }
+    
+    .box{
+        width: 148px;
+        height: 150px;
+        margin: 0 0 16px;
+        padding: 0 0 10px;
+    }
+    
+    h2{
+        font-size: 80px;
+        line-height: 0.89;
+        letter-spacing: -2.4px;
+    }
+    
+    .box-wrapper{
+        width: 148px;
+        height: 140px;
+    }
+    
+    
+    hr{
+        width: 148px;
+        height: 1px;
+        background-color: #000;
+    }
+    
+    .oval-left, .oval-right{
+        width:6px;
+        height: 12px;
+    }
+    
+    .rectangle{
+        width: 148px;
+        height: 70px;
+    }
+    
+    h3{
+        font-size: 14px;
+        letter-spacing: 5.92px;
+    }
+    
+    footer{
+        width: 100%;
+        background: url(./images/pattern-hills.svg) bottom center ;
+        background-repeat: no-repeat;
+    }
+    
+    .media{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+        margin: 100px 0 72px;
+    }
+
+    .media img:hover{
+        cursor: pointer;
+        filter: invert(49%) sepia(91%) saturate(1836%) hue-rotate(313deg) brightness(103%) contrast(97%);
+    }
+    
+    
+
+
+
+
+}
+
+
+
+
